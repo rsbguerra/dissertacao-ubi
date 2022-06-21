@@ -9,84 +9,25 @@
 
 \cleardoublepage
 
-%%Dedicatória
-\newpage
-\section*{\titulos{Dedicatória}}
-\vspace{0.5cm}
-Inserir dedicatória (opcional)
-\cleardoublepage
+% Agradecimentos, didicatória, prefácio, Resumo+palavras-chave, abstrato
+% indice, lista de figuras e tabelas, abreviaturas
+\input{../chapters/preliminary}
 
-%%Agradecimentos
-\newpage
-\section*{\titulos{Agradecimentos}}
-\vspace{0.5cm}
-Agradecer a quem de direito (opcional)
-\cleardoublepage
-
-%%Prefácio
-\newpage
-\section*{\titulos{Prefácio}}
-\vspace{0.5cm}
-Opcional
-\cleardoublepage
-
-%%Resumo+palavras-chave
-\newpage
-\section*{\titulos{Resumo}}
-\vspace{0.5cm}
-Resumo do trabalho.
-
-\vspace{2.2cm}
-{\titulos{Palavras-chave}}
-
-\vspace{0.8cm}
-Inserir palavras-chave
-\cleardoublepage
-
-%%abstract+keywords
-\newpage
-\section*{\titulos{Abstract}}
-\vspace{0.5cm}
-Abstract in English.
-
-\vspace{2.2cm}
-{\titulos{Keywords}}
-
-\vspace{0.8cm}
-Keywords in English.
-\cleardoublepage
-
-%%Índice
-\tableofcontents
-
-%%Lista de figuras
-\listoffigures
-\cleardoublepage
-
-%%Lista de tabelas
-\listoftables
-\cleardoublepage
-
-%%Abreviaturas
-\newpage
-\input{../chapters/acro.tex}
-\cleardoublepage
-
-%% Capítulos
+% Capítulos
 \mainmatter
 \input{../chapters/intro}
-\input{../chapters/estado-arte}
+\input{../chapters/state-art/main}
 \input{../chapters/conclusao}
 
-%%  Bibliografia
+%  Bibliografia
 \cleardoublepage
 \phantomsection
-\bibliography{../bibtex/bibliography}
+\bibliography{../bibtex/bibliography, ../bibtex/bibliography2}
 \bibliographystyle{IEEEtran}
 
 \cleardoublepage
 
-%%Inserir índice remissivo
+%Inserir índice remissivo
 \printindex
 
 \end{document}
