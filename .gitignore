@@ -3,6 +3,7 @@
 *.blg
 *.brf
 *.fls
+*.idx
 *.lof
 *.log
 *.lot
