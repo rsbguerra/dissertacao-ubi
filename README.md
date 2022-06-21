@@ -1,36 +1,20 @@
-Modelo para a escrita em LaTeX de teses N�O OFICIAL da Universidade da Beira Interior, seguindo o despacho Reitoral n� 49/R/2010.
-Revogado pelo despacho Reitoral n� 2019/R/630
+>  Modelo para a escrita em LaTeX de teses ***NÃO OFICIAL*** da Universidade da Beira Interior, seguindo o despacho Reitoral n° 49/R/2010. Revogado pelo despacho Reitoral n° 2019/R/630
 
-Vers�o 3.0 - 2020/01/31
-Esta Vers�o � um update � vers�o oficial Vers�o 2.2 .
-Esta � uma Vers�o N�O OFICIAL do modelo de Teses da UBI. Segue o despacho Reitoral n� 2019/R/630 quase na integra. Sem garantias algumas.
-Aguns erros que a UBI forneceu no ficheiro WORD foram corrigidos no LaTeX.
+### Organização do template:
+- `/src` contém todos os ficheiros relativos à formatação do documento e o ficheiro principal. Nesta pasta encontram-se:
+  - `main.tex`, o ficheiro principal do documento;
+  - `PaginaRosto.tex`, que gera a página de rosto;
+  - `formatacaoUBI.tex` e `estiloUBI.cls`, definem a formatação a ser usada em teses apresentadadas na Universidade da Beira Interior, seguindo as normas do despacho préviamente mensionado. ***Não se aconselha a edição destes dois documentos***.
+  - `preamble.tex` contém todos os pacotes ou comandos que o autor pode precisar para além dos importados ou definidos em `formatacaoUBI.tex`
+- `\bibtex`, onde se inserem as referências da tese em formato bibTeX. Para teses com uma lista de referências considerável é aconselhado dividi-las por vários ficheiros, organizados por capítulo ou tópico. Esta pasta também contém:
+  - `estilo-biblio.bst`, define o estilo da bibliografia, pode ser trocado por qualquer outro ficheiro de acordo com a norma a utilizar (deixada em aberto pelo despacho);
+- O corpo principal da tese esterá contido em `\chapters`
+- directório imagens, onde por defeito deverão ser colocadas as imagens a utilizar.
 
-Vers�o 2.2 - 2016/06/01
+Download da última versão em área reservada: http://www.UBI.pt.
 
-Em rela��o � Vers�o 2.1 na Vers�o 2.2 existem duas op��es para as Listas, Lista de Figuras e Lista de Tabelas, podem aparecer as palavras "Figura" e "Tabela" nas respectivas listas. Como exemplo:
-2.1 Correspond�ncia entre as cores das riscas das resist�ncias e o seu valor �hmico. .3
-ou
-Tabela 2.1 Correspond�ncia entre as cores das riscas das resist�ncias e o seu valor�hmico. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-3
+Uso e distribuição de acordo com a licenca GNU GPL.
 
-Em rela��o � Vers�o 2.0 na Vers�o 2.1 passa-se a deixar de compilar em PDFLaTeX para se passar a compilar em XeLaTeX.
-� necessa?io passar a compilar em XeLaTeX para utilizar o tipo de letra Trebuchet.
+Este programa é um software livre: você pode redistribui-lo e/ou modificá-lo dentro dos termos da Licença Pública Geral GNU como publicada pela Free Software Foundation, na versão 3 da Licença, ou (na sua opinião) qualquer versão.
 
-Para utilizar o XeLaTeX a codifica��o dos ficheiros tem que ser em UTF-8.
-
-Utilizadores de Linux com gestor de pacotes DEB t�m que ter o pacote "ttf-mscorefonts-installer" instalado
-para utilizar o tipo de letra Georgia. N�o foram testados outros gestores de pacotes.
-
-O modelo foi compilado em XeLaTeX e sem erros num sistema Debian 10 Gnome 64-bit 64-bit (N�o foram testadas outras distribui��es),
-com Texmaker 5.0.3 e com texlive-full. Inclu�dos no .zip:
-
--   Tese.tex, o ficheiro principal do documento;
--   PaginaRosto.tex, que gera a p�gina de rosto;
--   Intro.tex e Exemplos.tex, exemplos de cap�tulos com tabela, figura e refer�ncias;
--   formatacaoUBI.tex e estiloUBI.sty, definem a formata��o da tese, n�o � recomend�vel
-    editar estes ficheiros;
--   estilo-biblio.bst, define o estilo da bibliografia, pode ser trocado por qualquer
-    outro ficheiro de acordo com a norma a utilizar (deixada em aberto pelo despacho);
--   bibliografia.bib, onde se inserem as refer�ncias da tese em formato bibTeX;
--   direct�rio imagens, onde por defeito dever�o ser colocadas as imagens a utilizar.
+Este programa é distribuido na esperança que possa ser útil, mas SEM NENHUMA GARANTIA; sem uma garantia implícita de ADEQUAÇÃO a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a Licença Pública Geral GNU para maiores detalhes.Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este programa, se não, veja <http://www.gnu.org/licenses/>.
