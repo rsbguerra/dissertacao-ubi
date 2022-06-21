@@ -1,6 +1,6 @@
 # Modelo Dissertação/Tese UBI adaptado para LaTeX
 
->  Modelo para a escrita em LaTeX de teses ***NÃO OFICIAL*** da Universidade da Beira Interior, seguindo o despacho Reitoral n° 49/R/2010. Revogado pelo despacho Reitoral n° 2019/R/630
+_**Modelo para a escrita em LaTeX de teses ***NÃO OFICIAL*** da Universidade da Beira Interior, seguindo o despacho Reitoral n° 49/R/2010. Revogado pelo despacho Reitoral n° 2019/R/630**_
 
 ### Organização do template:
 - `/src` contém todos os ficheiros relativos à formatação do documento e o ficheiro principal. Nesta pasta encontram-se:
